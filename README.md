@@ -54,7 +54,7 @@ The following required functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/SaWt1FG' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./src/assets/bookdashboard.gif' title='Book Dashboard' width='' alt='Book Dashboard' />
 
 GIF created with Kap
 
