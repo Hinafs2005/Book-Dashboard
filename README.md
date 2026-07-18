@@ -42,9 +42,9 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="YOUR_GIF_LINK_HERE" title="Video Walkthrough" width="800" alt="Video Walkthrough" />
+<img src="./src/assets/VideoWalkthrough.gif" width="800" alt="Video Walkthrough" />
 
-GIF created with Kap (macOS).
+GIF created with EzGif (macOS).
 
 ## Notes
 
