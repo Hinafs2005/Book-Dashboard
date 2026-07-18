@@ -1,74 +1,67 @@
-# Web Development Project 5 - Book Dashboard
+# Web Development Project 6 - Book Explorer
 
-Submitted by: Hina Sadiq
+Submitted by: **Hina Sadiq**
 
-This web app: A Book Dashboard that allows users to explore book data fetched from a public API. Users can search for books, filter by categories, and view summary statistics about the available books.
+This web app allows users to browse fiction books from the Open Library API, search by title, filter books by publication year, view summary statistics, explore interactive data visualizations, and click on individual books to view detailed information on a dedicated page.
 
-Time spent: X hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
-The following required functionality is completed:
+The following **required** functionality is completed:
 
-- [x] **The site has a dashboard displaying a list of data fetched using an API call**
-  - The dashboard displays 10+ unique books, one per row
-  - Each book displays features such as title, author, publication year, and category
+- [x] **Clicking on an item in the list view displays more details about it**
+  - [x] Clicking on an item in the dashboard list navigates to a detail view for that item.
+  - [x] Detail view includes extra information about the item not included in the dashboard view.
+  - [x] The same application layout/navigation is maintained while viewing the detail page.
 
-- [x] **`useEffect` React hook and `async`/`await` are used**
-  - API data is fetched when the dashboard loads using React hooks
+- [x] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
+  - [x] Each book has its own unique URL using React Router.
+  - [x] Users can directly navigate to a specific book's detail page.
 
-- [x] **The app dashboard includes at least three summary statistics about the data**
-  - Total number of books displayed
-  - Total number of authors
-  - Average publication year
+- [x] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
+  - [x] Bar chart showing the number of books by publication era.
+  - [x] Pie chart showing the distribution of books across publication eras.
 
-- [x] **A search bar allows the user to search for an item in the fetched data**
-  - Users can search books by title
-  - Results update dynamically as the user types
+## The following **optional** features are implemented:
 
-- [x] **An additional filter allows the user to restrict displayed items by specified categories**
-  - Users can filter books by category/genre
-  - The filter uses a different attribute than the search bar
-  - Results update dynamically when the filter changes
+- [x] The site's customized dashboard contains additional descriptive content introducing the Book Explorer application and encouraging users to discover books.
+- [ ] The site allows users to toggle between different data visualizations.
 
+## The following **additional** features are implemented:
 
-## The following optional features are implemented:
-
-- [x] Multiple filters can be applied simultaneously
-- [x] Filters use different input types
-  - Search text input
-  - Category dropdown
-
-- [ ] The user can enter specific bounds for filter values
-
-
-## The following additional features are implemented:
-
-- [x] Responsive dashboard design
-- [x] Book cover images
-- [x] Loading state while fetching API data
-- [x] No results message when searches return no books
-
+- [x] Search books by title.
+- [x] Filter books by publication year.
+- [x] Summary statistic cards displaying key dataset information.
+- [x] Responsive dashboard layout.
+- [x] Modern UI with custom color palette and hover animations.
+- [x] Styled book detail page with subject tags and navigation back to the dashboard.
+- [x] Interactive charts with customized styling using Recharts.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='./src/assets/bookdashboard.gif' title='Book Dashboard' width='' alt='Book Dashboard' />
+<img src="YOUR_GIF_LINK_HERE" title="Video Walkthrough" width="800" alt="Video Walkthrough" />
 
-GIF created with Kap
-
+GIF created with Kap (macOS).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
-
-Example:
-The main challenges were working with API data, organizing the book information into reusable React components, and implementing search/filter functionality.
-
+One of the biggest challenges was integrating React Router into the existing dashboard while maintaining a clean navigation flow between the dashboard and the individual book detail pages. Another challenge was transforming the fetched API data into meaningful visualizations using Recharts and customizing the charts to match the overall design of the application.
 
 ## License
 
-Copyright [2026] Hina Sadiq
+    Copyright 2026 Hina Sadiq
 
-Licensed under the Apache License, Version 2.0
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.

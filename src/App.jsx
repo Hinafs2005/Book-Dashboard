@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import SummaryCards from "./components/SummaryCards";
 import SearchBar from "./components/SearchBar";
 import Filter from "./components/Filter";
 import BookList from "./components/BookList";
+import BookDetail from "./pages/BookDetail";
+import Charts from "./components/Charts";
 import "./App.css";
 
 function App() {
@@ -43,23 +46,22 @@ function App() {
     return matchesSearch && matchesYear;
   });
 
-  return (
+  const Dashboard = () => (
     <div className="App">
       <div className="hero">
+        <div className="hero-text">
+          <h1>📚 Book Explorer</h1>
 
-      <div className="hero-text">
-
-      <h1>📚 Book Explorer</h1>
-
-      <p>
-          Browse timeless fiction, discover new authors, and explore one of the world's largest digital libraries.
-      </p>
-
-      </div>
-
+          <p>
+            Browse timeless fiction, discover new authors, and explore one of
+            the world's largest digital libraries.
+          </p>
+        </div>
       </div>
 
       <SummaryCards books={books} />
+
+      <Charts books={filteredBooks} />
 
       <div className="controls">
         <SearchBar search={search} setSearch={setSearch} />
@@ -72,6 +74,13 @@ function App() {
 
       <BookList books={filteredBooks} />
     </div>
+  );
+
+  return (
+    <Routes>
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/book/:id" element={<BookDetail />} />
+    </Routes>
   );
 }
 
